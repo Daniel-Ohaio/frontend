@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "esbuild src/main.ts --bundle --ignore-annotations --outfile=dist/main.js --servedir=. --serve=4200",
+    "build": "esbuild src/main.ts --bundle --ignore-annotations --outfile=dist/main.js"
+  },
+  "dependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
